@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+.inner-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.inputs {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.subjects {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid silver;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+}
+h2,
+h3 {
+  color: #717171;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+button {
+  border: 1px solid #717171;
+  border-radius: 10px;
+  width: 200px;
+  color: black;
+  padding: 17px;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.results {
+  background-color: black;
+  width: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50;
+  bottom: 50;
+  display: none;
+}
+.result-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#person1,
+#person2,
+#total1,
+#total2 , #last-total {
+  padding: 30px;
+  color: white;
+  font-size: xx-large;
+  font-variant-caps: all-petite-caps;
+}
+.firstperson {
+  border: 2px solid white;
+  margin-top: 18px;
+}
+.second-person {
+  border: 2px solid white;
+  margin-top: 18px;
+}
+#last-total {
+  text-align: center;
+}
+
+@media only screen and (min-width: 806px) and (max-width: 1293px) {
+  .results {
+    background-color: black;
+    width: 80%;
+    padding: 10px;
+    position: absolute;
+    top: 50;
+    bottom: 50;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 805px) {
+  .results {
+    background-color: black;
+    width: 90%;
+    padding: 5px;
+    position: fixed;
+    top: 20%;
+    bottom: 50;
+  }
+  #person1,
+  #person2,
+  #total1,
+  #total2, #last-total {
+    padding: 10px;
+    color: white;
+    font-size: large;
+    font-variant-caps: all-petite-caps;
+  }
+}

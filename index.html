@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Percentage Compare</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Student Percentage Comparison</h1>
+      <div class="inner-container">
+        <div class="card">
+          <h2>Person 1</h2>
+          <div class="inputs">
+            <input type="text" id="name1" placeholder="First Student Name*" />
+            <div class="subjects">
+              <h3>Enter Your Subjects Marks</h3>
+              <input type="number" id="math1" placeholder="Maths*" required="true" />
+              <input
+                type="number"
+                id="science1"
+                placeholder="Science*"
+                required
+              />
+              <input type="number" id="hindi1" placeholder="Hindi*" required />
+              <input
+                type="number"
+                id="english1"
+                placeholder="English*"
+                required
+              />
+              <input
+                type="number"
+                id="programming1"
+                placeholder="Programming*"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Person 2</h2>
+          <div class="inputs">
+            <input type="text" id="name2" placeholder="Second Student Name*" />
+            <div class="subjects">
+              <h3>Enter Your Subjects Marks</h3>
+              <input type="number" id="math2" placeholder="Maths*" required />
+              <input
+                type="number"
+                id="science2"
+                placeholder="Science*"
+                required
+              />
+              <input type="number" id="hindi2" placeholder="Hindi*" required />
+              <input
+                type="number"
+                id="english2"
+                placeholder="English*"
+                required
+              />
+              <input
+                type="number"
+                id="programming2"
+                placeholder="Programming*"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" id="btn">Compare</button>
+
+      <div class="results">
+        <h1>Comparison Results</h1>
+        <div class="result-inner">
+          <div class="firstperson">
+            <p id="person1"></p>
+            <p id="total1"></p>
+          </div>
+          <div class="second-person">
+            <p id="person2"></p>
+            <p id="total2"></p>
+          </div>
+        </div>
+        <p id="last-total"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
